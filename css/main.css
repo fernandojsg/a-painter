@@ -75,7 +75,7 @@
   left: 15px;
   height: 54px;
   width: 252px;
-  background-image: url(https://cdn.aframe.io/a-painter/images/apainter-banner.png);
+  background-image: url(http://localhost:8080/assets/images/apainter-banner.png);
 }
 
 #apainter-logo.hidden, #apainter-author.hidden{
