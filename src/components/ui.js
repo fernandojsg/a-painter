@@ -667,13 +667,13 @@ AFRAME.registerComponent('ui', {
 
   open: function () {
     var uiEl = this.uiEl;
-    var coords = { x: 0, y: 0, z: 0 };
     var tween;
     if (!this.closed) { return; }
     this.uiEl.setAttribute('visible', true);
-    tween = new AFRAME.TWEEN.Tween(coords)
+    tween = new AFRAME.TWEEN.Tween({ x: 0, y: 0, z: 0 })
         .to({ x: 1, y: 1, z: 1 }, 100)
         .onUpdate(function () {
+          console.log(this.x);
           uiEl.setAttribute('scale', this);
         })
         .easing(AFRAME.TWEEN.Easing.Exponential.Out);
