@@ -137,6 +137,8 @@ AFRAME.registerSystem('painter', {
       if (event.keyCode === 71) {
         // Export to GTF (g)
         var drawing = document.querySelector('.a-drawing');
+        //self.sceneEl.systems['gltf-exporter'].export(drawing, {binary: true});
+        debugger;
         self.sceneEl.systems['gltf-exporter'].export(drawing);
       }
       if (event.keyCode === 78) {
